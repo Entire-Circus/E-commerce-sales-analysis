@@ -31,7 +31,7 @@ filtered_df2_gr = filtered_df2.groupby("Product")["Campaign_Source"].value_count
 reset_df = filtered_df2_gr.reset_index()
 ```
 ## Visualization example
-![Marketing campaing performance](Images/Marketing&20Campaing&20Performance.png)
+![Marketing campaing performance](Images/marketing_campaing_performance.png)
 ```python
 plt.figure(figsize=(12, 6))
 sns.barplot(data=reset_df, x="Product", y="count", hue="Campaign_Source")
